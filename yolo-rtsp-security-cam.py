@@ -71,7 +71,7 @@ if yolo_on:
 
 # Set up other internal variables
 loop = True
-cap = cv2.VideoCapture(rtsp_stream)
+cap = cv2.VideoCapture(0)
 fps = cap.get(cv2.CAP_PROP_FPS)
 period = 1/fps
 tail_length = tail_length*fps
